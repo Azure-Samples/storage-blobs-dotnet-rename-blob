@@ -1,3 +1,9 @@
+---
+services: blobs
+platforms: c#
+author: msonecode
+---
+
 # storage-blobs-dotnet-rename-blob
 A code snippet to demonstrate how to rename windows azure blob files.
 ## Building this sample
