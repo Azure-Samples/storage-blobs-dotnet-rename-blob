@@ -4,7 +4,7 @@ platforms: c#
 author: msonecode
 ---
 
-# storage-blobs-dotnet-rename-blob
+# How to rename a blob file in Azure Blob Storage[Code Snippet]
 A code snippet to demonstrate how to rename windows azure blob files.
 ## Building this sample
 To install Microsoft Azure Storage, run the following command in the Package Manager Console
