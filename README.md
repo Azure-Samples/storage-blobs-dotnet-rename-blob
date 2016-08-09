@@ -44,7 +44,7 @@ if (!await blobCopy.ExistsAsync())
 ```
 
 ## About the code
-There’s no API that can rename the blob file on Azure.
+There is no API that can rename the blob file on Azure.
 This code snippet demonstrates how to rename a blob file in Microsoft Azure Blob Storage.
 ## More information
 <https://code.msdn.microsoft.com/How-to-rename-a-blob-file-58aae8c9>
