@@ -4,13 +4,15 @@ platforms: c#
 author: msonecode
 ---
 
-# How to rename a blob file in Azure Blob Storage[Code Snippet]
-A code snippet to demonstrate how to rename windows azure blob files.
+# How to rename a blob file in Azure Blob Storage (using a code snippet)
+##Introduction
+This sample includes a code snippet to demonstrate how to rename Windows Azure Blob files.
+Due to the lack of API to rename the blob file on Azure, the code snippet at below will only demonstrate how to rename a blob file in Microsoft Azure Blob Storage.
 ## Building this sample
 To install Microsoft Azure Storage, run the following command in the Package Manager Console
-PM> Install-Package WindowsAzure.Storage
-Ensure your Visual Studio version is 2012 or above.
-Before using the code snippet, you need to set your account name and key first:
+PM> Install-Package WindowsAzure.Storage.
+- Ensure your Visual Studio version is 2012 or above.
+- Before using the code snippet, you need to set your account name and key first:
 
 ```cs
 StorageCredentials cred = new StorageCredentials("[Your storage account name]", "[Your storage account key]"); 
@@ -21,7 +23,7 @@ CloudBlobContainer container = new CloudBlobContainer(new Uri("http://[Your stor
 
 ```cs
 /// <summary>  
-/// 1. Copy the file and name it to a new name  
+/// 1. Copy the file and name it with a new name  
 /// 2. Delete the old file  
 /// </summary> 
 StorageCredentials cred = new StorageCredentials("[Your?storage?account?name]", "[Your?storage?account?key]");  
@@ -43,8 +45,5 @@ if (!await blobCopy.ExistsAsync())
 } 
 ```
 
-## About the code
-There is no API that can rename the blob file on Azure.
-This code snippet demonstrates how to rename a blob file in Microsoft Azure Blob Storage.
 ## More information
 <https://code.msdn.microsoft.com/How-to-rename-a-blob-file-58aae8c9>
